@@ -1,0 +1,29 @@
+.login--container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+}
+.logo h1{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 7px;
+}
+.logo span{
+  font-size: 40px;
+}
+.logo P{
+  padding-top: 5px;
+  color: #43578D;
+  font-weight: 600;
+}

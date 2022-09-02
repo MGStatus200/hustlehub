@@ -1,0 +1,16 @@
+.top--ellipsis > img{
+  height: 100px;
+  max-height: 200px;
+  position: absolute;
+  max-width: inherit;
+}
+.top--ellipsis img:nth-last-child(1){
+  top: 0px;
+  left: 10px;
+}
+.top--ellipsis img:nth-last-child(2){
+  left: -60px;
+  top: 50px;
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-90deg);
+}
