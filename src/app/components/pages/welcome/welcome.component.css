@@ -1,0 +1,40 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.top--ellipsis > img{
+  height: 100px;
+  max-height: 200px;
+  position: absolute;
+  max-width: inherit;
+}
+.top--ellipsis img:nth-last-child(1){
+  top: 0px;
+  left: 10px;
+}
+.top--ellipsis img:nth-last-child(2){
+  left: -60px;
+  top: 50px;
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-90deg);
+}
+.logo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+   margin-top: 150px;
+   padding: 100px;
+}
+.logo > img{
+  width: 271px;
+  height: 150px;
+  max-height: 230px;
+}
+
+.app--name{
+  margin-top: 10px;
+}
