@@ -24,6 +24,12 @@
       "password": "Person@123!",
       "confirm_password": "Jimbo@1234",
       "id": 3
+    },
+    {
+      "email": "tim@gmail.com",
+      "password": "Passord@123!",
+      "confirm_password": "Password@123!",
+      "id": 4
     }
   ],
   "profile": {

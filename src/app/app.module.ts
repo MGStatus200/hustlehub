@@ -20,6 +20,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { AdvertiseComponent } from './components/pages/advertise/advertise.component';
 import { UserbadgeComponent } from './components/partials/userbadge/userbadge.component';
+import { SellproductComponent } from './components/pages/sellproduct/sellproduct.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { UserbadgeComponent } from './components/partials/userbadge/userbadge.co
     RegisterComponent,
     AdvertiseComponent,
     UserbadgeComponent,
+    SellproductComponent,
     // NgToastModule
   ],
   imports: [

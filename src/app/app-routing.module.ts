@@ -4,6 +4,7 @@ import { AdvertiseComponent } from './components/pages/advertise/advertise.compo
 import { HomeComponent } from './components/pages/home/home.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { RegisterComponent } from './components/pages/register/register.component';
+import { SellproductComponent } from './components/pages/sellproduct/sellproduct.component';
 import { WelcomeComponent } from './components/pages/welcome/welcome.component';
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'home',component:HomeComponent},
   {path:'register',component:RegisterComponent},
-  {path:'advertise',component:AdvertiseComponent}
+  {path:'advertise',component:AdvertiseComponent},
+  {path:'addProduct',component:SellproductComponent}
 ];
 
 @NgModule({

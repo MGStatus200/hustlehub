@@ -5,20 +5,21 @@
     <p>Caught the Vision? Now Hustle for it!</p>
   </div>
   <div class="login--inputs">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="example-container">
 
         <p>
           <mat-form-field appearance="fill">
             <mat-label>Enter your email Address</mat-label>
-            <input type="email" matInput placeholder="pat@example.com" required>
-            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            <input formControlName= "email" type="email" matInput placeholder="pat@example.com" required>
+            <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
           </mat-form-field>
         </p>
 
         <p>
           <mat-form-field appearance="fill">
             <mat-label>Enter your password</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'">
+            <input formControlName= "password" matInput [type]="hide ? 'password' : 'text'">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
@@ -31,6 +32,7 @@
       <button mat-button color="primary">Login</button>
       <a routerLink="/register">Don't have an account? <span>Register Now</span></a>
     </div>
+  </form>
 
   </div>
 
