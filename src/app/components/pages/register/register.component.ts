@@ -3,7 +3,7 @@ import {FormControl, Validators,FormGroup, FormBuilder} from '@angular/forms';
 import { CustomvalidationService } from 'src/app/services/custom-validation.service';
 import { UserService } from 'src/app/services/user.service';
 import { NgToastService } from 'ng-angular-popup';
-import { first } from 'rxjs';
+// import { first } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 @Component({
@@ -21,8 +21,8 @@ export class RegisterComponent implements OnInit {
   constructor(
     private formBuilder:FormBuilder,
     private customvalidator:CustomvalidationService,
-    private userservice:UserService,
-    private toast:NgToastService,
+    // private userservice:UserService,
+    // private toast:NgToastService,
     private http:HttpClient,
     private router:Router
    ) { }
@@ -32,52 +32,51 @@ export class RegisterComponent implements OnInit {
       email:new FormControl ('', [Validators.required, Validators.email]),
       password:new FormControl('',[Validators.required,Validators.minLength(8),this.customvalidator.patternPassValidator()]),
       confirm_password:new FormControl('',[Validators.required]),
-
     },
     {
       validators: this.customvalidator.passwordMatch('password','confirm_password')
     })
   }
 
-  // RegisterUser()
-  // {
-  // if(this.signUpForm.valid){
-  //   this.userservice.registerUser(this.signUpForm.value)
-  //   .pipe(first()).subscribe({
-  //     next:(res)=>
-  //     {
-  //       console.log(res.message);
-  //       if(res.message == 'Successful')
-  //       {
-  //         alert('User registered successfully');
-  //         // this.toast.success({detail:"Register Message",summary:"Registered Successfully",duration:4000})
-  //         //  this.router.navigate(['login']);
+  /*RegisterUser()
+  {
+  if(this.signUpForm.valid){
+    this.userservice.registerUser(this.signUpForm.value)
+    .pipe(first()).subscribe({
+      next:(res)=>
+      {
+        console.log(res.message);
+        if(res.message == 'Successful')
+        {
+          alert('User registered successfully');
+          // this.toast.success({detail:"Register Message",summary:"Registered Successfully",duration:4000})
+          //  this.router.navigate(['login']);
 
-  //       }
-  //       else if(res.message == 'Unsuccessful')
-  //       {
-  //         alert('Email already registered Please re-register')
-  //         // this.toast.error({detail:"Email Message",summary:"E-mail already Registered",duration:4000})
+        }
+        else if(res.message == 'Unsuccessful')
+        {
+          alert('Email already registered Please re-register')
+          // this.toast.error({detail:"Email Message",summary:"E-mail already Registered",duration:4000})
 
-  //       }
-  //     },
-  //     error:()=>{
-  //       // this.toast.error({detail:"Register Message",summary:"Unable To Register",duration:4000})
-  //      alert('Could no register User ');
-  //     }
+        }
+      },
+      error:()=>{
+        // this.toast.error({detail:"Register Message",summary:"Unable To Register",duration:4000})
+       alert('Could no register User ');
+      }
 
-  //   })
-  // }
+    })
+  }
 
 
-  // getErrorMessage() {
-  //   if (this.email.hasError('required')) {
-  //     return 'You must enter a value';
-  //   }
+  getErrorMessage() {
+    if (this.email.hasError('required')) {
+      return 'You must enter a value';
+    }
 
-  //   return this.email.hasError('email') ? 'Not a valid email' : '';
-  // }
-// }
+    return this.email.hasError('email') ? 'Not a valid email' : '';
+  }
+}*/
 signup(){
   // this.submitted=true;
   // if(this.signUpForm.valid){

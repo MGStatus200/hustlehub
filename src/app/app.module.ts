@@ -10,7 +10,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
-import { NgToastModule } from 'ng-angular-popup';
+// import { NgToastModule } from 'ng-angular-popup';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
@@ -46,7 +46,7 @@ import { UserbadgeComponent } from './components/partials/userbadge/userbadge.co
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    NgToastModule
+    // NgToastModule
 
   ],
   providers: [],
