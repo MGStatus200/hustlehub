@@ -38,6 +38,7 @@
   overflow: auto;
   margin-top: -40px;
   width: 80%;
+  margin-bottom: 20px;
 }
 .bottom--items{
   display: flex;
