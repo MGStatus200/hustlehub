@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  /* width: 80%; */
 }
 .logo{
   display: flex;
@@ -17,13 +18,82 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-  padding-top: 7px;
+  margin-top: 15px;
 }
 .logo span{
   font-size: 40px;
 }
-.logo P{
+.logo p{
   padding-top: 5px;
   color: #43578D;
   font-weight: 600;
+}
+.login--inputs{
+  padding: 20px;
+  display: flex;
+  background-color: #43578D;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  margin-top: -40px;
+  width: 80%;
+}
+.bottom--items{
+  display: flex;
+  flex-direction: column;
+  }
+.bottom--items button{
+  width: 280px;
+  height: 40px;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.bottom--items a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+.bottom--items span {
+  margin-top: 5px;
+  font-size: 16px;
+  color: white;
+}
+/****************Material*****************/
+.example-container > a{
+  padding-left: 2px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.mat-form-field{
+  min-width: 250px;
+  width: 280px;
+  font-size: 20px;
+
+}
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: rgb(255 255 255 / 38%);
+  width: 300px;
+}
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+input.example-right-align {
+  -moz-appearance: textfield;
 }
