@@ -4,12 +4,13 @@
     <h1>Hustle<span>|Hub</span></h1>
     <p>Become a hustler (☞ﾟヮﾟ)☞💸</p>
   </div>
+  <form [formGroup]="signUpForm" (ngSubmit)="signup()">
   <div class="inputs--container">
     <p>
       <mat-form-field appearance="fill">
         <mat-label>Email/Phone Number</mat-label>
         <div class="icons">
-          <input matInput placeholder="Email/Phone Number" >
+          <input matInput formControlName="email" placeholder="Email/Phone Number" >
           <mat-icon matSuffix>email</mat-icon>
           <mat-icon matSuffix>phone</mat-icon>
         </div>
@@ -20,7 +21,7 @@
     <p>
       <mat-form-field appearance="fill">
         <mat-label>Create your password</mat-label>
-        <input matInput [type]="hide ? 'password' : 'text'">
+        <input matInput formControlName="password" [type]="hide ? 'password' : 'text'">
         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
@@ -30,10 +31,13 @@
     <p>
       <mat-form-field appearance="fill">
         <mat-label>Confirm your password</mat-label>
-        <input matInput [type]="hide ? 'password' : 'text'">
+        <input matInput formControlName="confirm_password" [type]="hide ? 'password' : 'text'">
         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
+
+        <!-- <p><mat-error *ngIf="(confirm_password.touched && confirm_password.errors?.passwordMismatch)">Password should match</mat-error></p>
+                <mat-hint>Re-type password</mat-hint> -->
       </mat-form-field>
     </p>
 
@@ -42,5 +46,5 @@
     <a routerLink="/login">Already have an account? <span>Sign in</span></a>
   </div>
   </div>
-
+  </form>
 </div>

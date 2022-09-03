@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
-
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { Login } from 'src/app/models/login';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,13 +8,21 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 //Material Props
-email = new FormControl ('', [Validators.required, Validators.email]);
-hide = true;
+    email = new FormControl ('', [Validators.required, Validators.email]);
+
+  login!: Login[];
+  hide = true;
 
 constructor() { }
 
   ngOnInit(): void {
   }
+
+  loginForm = new FormGroup({
+    // email = new FormControl ('', [Validators.required, Validators.email]),
+    // password = new FormControl('')
+
+  })
 //form methods
 getErrorMessage() {
   if (this.email.hasError('required')) {
