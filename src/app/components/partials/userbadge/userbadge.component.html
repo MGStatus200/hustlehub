@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="user--welcome-menu">
+  <button mat-button [matMenuTriggerFor]="menu">Welcome Given Makofane<mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" yPosition="below" xPosition="after">
+      <button mat-menu-item>View Profile</button>
+      <button mat-menu-item>Manage Shop</button>
+    </mat-menu>
+</div>
+<!-- <mat-drawer-container class="example-container" >
+  <mat-drawer #drawer >I'm a drawer</mat-drawer>
+  <mat-drawer-content>
+    <button mat-menu-item>View Profile</button>
+    <button mat-menu-item>Manage Shop</button>
+    <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+  </mat-drawer-content>
+</mat-drawer-container> -->
