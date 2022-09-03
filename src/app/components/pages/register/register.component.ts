@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators,FormGroup, FormBuilder} from '@angular/forms';
 import { CustomvalidationService } from 'src/app/services/custom-validation.service';
-import { UserService } from 'src/app/services/user.service';
-import { NgToastService } from 'ng-angular-popup';
+// import { UserService } from 'src/app/services/user.service';
+// import { NgToastService } from 'ng-angular-popup';
 // import { first } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
