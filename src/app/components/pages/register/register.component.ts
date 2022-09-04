@@ -80,7 +80,7 @@ export class RegisterComponent implements OnInit {
 signup(){
   // this.submitted=true;
   // if(this.signUpForm.valid){
-    this.http.post<any>("http://localhost:3000/signup",this.signUpForm.value)
+    this.http.post<any>("http://localhost:3000/users",this.signUpForm.value)
     .subscribe(res=>{
       alert('sumitted suceessfuly');
       this.signUpForm.reset();

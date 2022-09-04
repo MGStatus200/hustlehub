@@ -1,1 +1,26 @@
-<p>home works!</p>
+<app-prod-search></app-prod-search>
+<button>search</button>
+<p>Showing results within 5km around you</p>
+<a href="">change distance or location</a>
+<div class="main--category">
+  <a href=""><button>Buy and support</button></a>
+  <a href=""><button>Hire for a task</button></a>
+  <a href=""><button>Attend Events</button></a>
+</div>
+<div class="contents--container">
+  <div class="sub--categories">
+    <app-categories></app-categories>
+  </div>
+  <div class="items">
+    <ul>
+      <li *ngFor="let prod of products">
+        <h4>{{prod.name}}</h4>
+        <div class="prices">
+          <h5>{{prod.minPrice}}</h5>
+          <h5>{{prod.maxPrice}}</h5>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</div>

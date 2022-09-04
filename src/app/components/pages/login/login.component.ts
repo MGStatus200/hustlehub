@@ -30,7 +30,7 @@ constructor(
     })
   }
 onSubmit(){
-  this.http.get<any>("http://localhost:3000/signup")
+  this.http.get<any>("http://localhost:3000/users")
   .subscribe(res=>{
     const user = res.find((a:any)=>{
       return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password

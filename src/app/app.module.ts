@@ -21,6 +21,9 @@ import { RegisterComponent } from './components/pages/register/register.componen
 import { AdvertiseComponent } from './components/pages/advertise/advertise.component';
 import { UserbadgeComponent } from './components/partials/userbadge/userbadge.component';
 import { SellproductComponent } from './components/pages/sellproduct/sellproduct.component';
+import { SearchComponent } from './components/partials/search/search.component';
+import { CategoriesComponent } from './components/partials/categories/categories.component';
+import { ProdSearchComponent } from './components/partials/prod-search/prod-search.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { SellproductComponent } from './components/pages/sellproduct/sellproduct
     AdvertiseComponent,
     UserbadgeComponent,
     SellproductComponent,
+    SearchComponent,
+    CategoriesComponent,
+    ProdSearchComponent,
     // NgToastModule
   ],
   imports: [

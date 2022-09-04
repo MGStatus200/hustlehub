@@ -10,7 +10,7 @@ export class UserService {
   registerUser(data : any)
   {
     // return this.http.post<any>(`${this.apiUrl}/add_user/user`,data)
-    return this.http.post<any>("http://localhost:3000/signup",data)
+    return this.http.post<any>("http://localhost:3000/users",data)
     // .subscribe(res=>{
     //   alert("Signed up!");
 

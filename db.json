@@ -1,38 +1,63 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "signup": [
-    {
-      "email": "user@gmail.com",
-      "password": "Password@123",
-      "confirm_password": "Password@123",
+      "email": "paerson@exaple.com",
+      "password": "Person@123",
+      "confirm_password": "Person@123",
       "id": 1
-    },
-    {
-      "email": "jimbo@gmail.com",
-      "password": "Jimbo@1234",
-      "confirm_password": "Jimbo@1234",
-      "id": 2
-    },
-    {
-      "email": "user@gmail.com",
-      "password": "Person@123!",
-      "confirm_password": "Jimbo@1234",
-      "id": 3
-    },
-    {
-      "email": "tim@gmail.com",
-      "password": "Passord@123!",
-      "confirm_password": "Password@123!",
-      "id": 4
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "products": [
+    {
+      "id": "1",
+      "name": "ice-cream",
+      "min_price": "5",
+      "max-price": "25",
+      "address": "12 tree street",
+      "lat": "-78458785",
+      "lng": "+12254888",
+      "prod_img": "",
+      "store_front_img": "",
+      "sub_category": [
+        "food",
+        "snack",
+        "cold"
+      ],
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "name": "veggies",
+      "min_price": "5",
+      "max-price": "25",
+      "address": "12 tree street",
+      "lat": "-78458785",
+      "lng": "+12254888",
+      "prod_img": "",
+      "store_front_img": "",
+      "sub_category": [
+        "food",
+        "snack",
+        "cold"
+      ],
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "name": "fruits",
+      "min_price": "5",
+      "max-price": "25",
+      "address": "12 tree street",
+      "lat": "-78458785",
+      "lng": "+12254888",
+      "prod_img": "",
+      "store_front_img": "",
+      "sub_category": [
+        "food",
+        "snack",
+        "cold"
+      ],
+      "userId": "2"
+    }
+  ]
 }

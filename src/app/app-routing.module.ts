@@ -13,7 +13,10 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'register',component:RegisterComponent},
   {path:'advertise',component:AdvertiseComponent},
-  {path:'addProduct',component:SellproductComponent}
+  {path:'addProduct',component:SellproductComponent},
+  {path:'category/:category',component:HomeComponent},
+  {path:'search/:searchTerm',component:HomeComponent},
+
 ];
 
 @NgModule({
