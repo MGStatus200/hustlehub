@@ -13,19 +13,13 @@
   }
   a:hover{
     cursor: pointer;
-    font-size: 16px;
-    text-decoration: underline;
   }
   a{
     text-decoration: none;
     color: black;
     font-weight: 600;
   }
-  a:hover{
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: underline;
-  }
+
   .main--category{
   display: flex;
   justify-content: center;
@@ -100,7 +94,7 @@
   }
   img{
     width: 150px;
-    height: 150px;
+        height: 150px;
     object-fit: cover;
     border-radius: 5px;
   }
@@ -116,3 +110,8 @@
 .name{
   min-height: 60px;
 }
+.mat-icon{
+  font-size: 14px;
+}
+
+

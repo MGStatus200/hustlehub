@@ -1,9 +1,4 @@
-.prod--container{
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column; */
-}
+
 .location{
 display: flex;
 flex-wrap: wrap;
@@ -19,9 +14,8 @@ a{
 }
 a:hover{
   cursor: pointer;
-  font-size: 16px;
-  text-decoration: underline;
 }
+
 .main--category{
 display: flex;
 justify-content: center;
@@ -113,3 +107,7 @@ img{
 .name{
   min-height: 60px;
 }
+.mat-icon{
+  font-size: 14px;
+}
+
