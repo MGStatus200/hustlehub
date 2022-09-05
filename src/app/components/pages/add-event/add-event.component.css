@@ -64,4 +64,11 @@ button:hover{
 .mat-icon{
   font-size: 16px;
 }
+.check{
+  font-size: 20px;
+  padding: 5px 0 25px 0;
+}
+.mat-checkbox:checked{
+  color: red;
+}
 

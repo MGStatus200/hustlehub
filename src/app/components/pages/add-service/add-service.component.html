@@ -1,1 +1,75 @@
-<p>add-service works!</p>
+<app-userbadge></app-userbadge>
+<div class="container">
+
+  <div class="heading">
+    <h4>Providing a Service</h4>
+  </div>
+
+  <div class="fields">
+
+    <div class="name--section">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>I am a</mat-label>
+        <input matInput placeholder="Ex. Painter" >
+      </mat-form-field>
+    </div>
+
+    <div class="price--section">
+
+          <div class="input--right">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>I charge</mat-label>
+              <span matPrefix>R &nbsp;</span>
+              <input matInput placeholder="Ex. 50 per hour" >
+            </mat-form-field>
+    </div>
+
+      <div class="details">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Give more details about your services</mat-label>
+          <mat-hint>{{message.value.length}} / 256</mat-hint>
+          <textarea #message matInput placeholder="Ex. I paint walls , houses and pavings"></textarea>
+        </mat-form-field>
+
+      </div>
+
+      <div class="location">
+        <mat-form-field appearance="fill">
+          <mat-label>I am  located at this address</mat-label>
+          <input
+             class="my-search-box"
+            (keydown.enter)="$event.preventDefault()"
+            placeholder="Search Location"
+            type="text"
+            #search
+           matInput placeholder="Placeholder">
+          <mat-icon matPrefix>my_location</mat-icon>
+        </mat-form-field>
+      </div>
+
+      <div *ngIf="apiLoaded | async">
+        <google-map
+        #myGoogleMap
+        height="500px"
+        width="100%"
+        [zoom]="zoom"
+        [center]="center"
+        [options]="options">
+</google-map>
+      </div>
+
+      <div class="images">
+        <div>
+          <p>Upload your Profile Picture</p>
+          <input type="file">
+        </div>
+        <div>
+          <p>Show off your work</p>
+          <input type="file">
+        </div>
+      </div>
+    </div>
+    <button color="primary" mat-button >Submit</button>
+
+  </div>
+</div>

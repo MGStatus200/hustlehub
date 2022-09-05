@@ -2,41 +2,60 @@
 <div class="container">
 
   <div class="heading">
-    <h4>Providing a Service</h4>
+    <h4>Creating Event Invite</h4>
   </div>
 
   <div class="fields">
 
     <div class="name--section">
       <mat-form-field class="example-full-width" appearance="fill">
-        <mat-label>I am a</mat-label>
-        <input matInput placeholder="Ex. Painter" >
+        <mat-label>I am hosting</mat-label>
+        <input matInput placeholder="Ex. Fun run day" >
       </mat-form-field>
     </div>
 
+    <div class="check">
+      <mat-checkbox class="check">Fund Raising event</mat-checkbox>
+    </div>
+
     <div class="price--section">
+      <p>The prices are:</p>
+
+      <div class="inputs">
+
+          <div class="input--left">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Kids</mat-label>
+              <span matPrefix>R &nbsp;</span>
+              <input matInput placeholder="Ex. 20" >
+            </mat-form-field>
+          </div>
 
           <div class="input--right">
             <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label>I charge</mat-label>
+              <mat-label>Adults</mat-label>
               <span matPrefix>R &nbsp;</span>
-              <input matInput placeholder="Ex. 50 per hour" >
+              <input matInput placeholder="Ex. 70" >
             </mat-form-field>
 
+          </div>
+      </div>
+      <div class="check">
+        <mat-checkbox class="check">No kids Allowed!</mat-checkbox>
       </div>
 
       <div class="details">
         <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Give more details about your services</mat-label>
+          <mat-label>Give more details about your product</mat-label>
           <mat-hint>{{message.value.length}} / 256</mat-hint>
-          <textarea #message matInput placeholder="Ex. I paint walls , houses and pavings"></textarea>
+          <textarea #message matInput placeholder="Ex. Fun color run race, food stalls, mini soccer game"></textarea>
         </mat-form-field>
 
       </div>
 
       <div class="location">
         <mat-form-field appearance="fill">
-          <mat-label>I am  located at this address</mat-label>
+          <mat-label>Enter address</mat-label>
           <input
              class="my-search-box"
             (keydown.enter)="$event.preventDefault()"
@@ -61,13 +80,10 @@
 
       <div class="images">
         <div>
-          <p>Upload your Profile Picture</p>
+          <p>Upload Event Poster Picture</p>
           <input type="file">
         </div>
-        <div>
-          <p>Show off your work</p>
-          <input type="file">
-        </div>
+
       </div>
     </div>
     <button color="primary" mat-button >Submit</button>
