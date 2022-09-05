@@ -156,7 +156,7 @@ export const sample_events:Events[]=[
     kidsPrice:0,
     adultsPrice:0,
     eventActivitites:"Food stalls will present",
-    eventDetails:"Tiger Start vs Meeno, timba HS vs Eagles ",
+    eventDetails:"Celbrating all woman around the world, we'll be having motivational speakers and gift giving",
     eventLocation:"Vilagazi sports grounds",
     startDateTime:"12 September 2022, 10:00",
     endDateTime:"12 September 2022, 14:00",
@@ -173,14 +173,14 @@ export const sample_events:Events[]=[
     kidsPrice:0,
     adultsPrice:50,
     eventActivitites:"Food stalls will present",
-    eventDetails:"Tiger Start vs Meeno, timba HS vs Eagles ",
+    eventDetails:"Have the laughs all night ",
     eventLocation:"Vilagazi sports grounds",
     startDateTime:"12 September 2022, 10:00",
     endDateTime:"12 September 2022, 14:00",
     posterImgUrl:"assets/comedy.jpg",
     hostName:"Mr Benson Maselo",
     specialGuests:['Kelly Pepppers','Lethabo Maesela','Kevin Jhonson'],
-    categories:['sports tournaments'],
+    categories:['entertainment'],
     vendorid:55
   },
   {
@@ -196,7 +196,7 @@ export const sample_events:Events[]=[
     endDateTime:"12 September 2022, 14:00",
     posterImgUrl:"assets/color.jpg",
     hostName:"Mr Benson Maselo",
-    specialGuests:['Kelly Pepppers','Lethabo Maesela','Kevin Jhonson'],
+    specialGuests:[''],
     categories:['competitions','fund raise'],
     vendorid:24
   }
@@ -208,18 +208,19 @@ export const sample_catergories:category[]=[
 ]
 export const sample_hirecatergories:hirecategory[]=[
   {name:'All',count:4},
-  {name:'contruction',count:3},
+  {name:'contruction',count:1},
   {name:'home improvements',count:1},
-  {name:'renovations',count:6},
-  {name:'cleaner',count:27},
-  {name:'care taking',count:12}
+  {name:'renovations',count:2},
+  {name:'cleaner',count:1},
+  {name:'care taking',count:1}
 ]
 export const sample_eventcategories:eventcategory[]=[
-  {name:'All',count:5},
+  {name:'All',count:6},
   {name:'sports tournaments',count:1},
   {name:'open days',count:1},
-  {name:'competitions',count:0},
+  {name:'competitions',count:1},
   {name:'celebrations',count:1},
-  {name:'fund raise',count:1}
+  {name:'fund raise',count:1},
+  {name:'entertainment',count:1}
 ]
 
