@@ -15,6 +15,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { CommonModule } from '@angular/common';
 import {  HttpClientJsonpModule } from '@angular/common/http';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
@@ -91,7 +93,9 @@ import { NotFoundComponent } from './components/partials/not-found/not-found.com
     // NgToastModule
     GoogleMapsModule,
     HttpClientJsonpModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatNativeDateModule
 
   ],
   providers: [],

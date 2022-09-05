@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { GoogleMap } from '@angular/google-maps';
+import {FormGroup, FormControl} from '@angular/forms';
+
 @Component({
   selector: 'app-add-event',
   templateUrl: './add-event.component.html',
@@ -81,5 +83,10 @@ export class AddEventComponent implements OnInit {
       });
       });
     }
+
+    range = new FormGroup({
+      start: new FormControl<Date | null>(null),
+      end: new FormControl<Date | null>(null),
+    });
 
 }
