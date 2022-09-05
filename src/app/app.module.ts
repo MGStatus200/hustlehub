@@ -36,6 +36,9 @@ import { SingleEventComponent } from './components/partials/single-event/single-
 import { SingleServiceComponent } from './components/partials/single-service/single-service.component';
 import { SubscriptionComponent } from './components/pages/subscription/subscription.component';
 import { PaymentComponent } from './components/pages/payment/payment.component';
+import { AddEventComponent } from './components/pages/add-event/add-event.component';
+import { AddServiceComponent } from './components/pages/add-service/add-service.component';
+import { NotFoundComponent } from './components/partials/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +66,9 @@ import { PaymentComponent } from './components/pages/payment/payment.component';
     SingleServiceComponent,
     SubscriptionComponent,
     PaymentComponent,
+    AddEventComponent,
+    AddServiceComponent,
+    NotFoundComponent,
     // NgToastModule
   ],
   imports: [

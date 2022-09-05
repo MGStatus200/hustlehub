@@ -17,6 +17,12 @@
   <div class="sub--categories">
     <app-hirecategories></app-hirecategories>
   </div>
+  <app-not-found
+    [visible]="!service || !service.length"
+    notFoundMessage="Service not found"
+    reserLinkText="View All"
+    resetLinkRoute = '/hire'
+></app-not-found>
   <div class="items">
     <ul>
       <li *ngFor="let s of service">

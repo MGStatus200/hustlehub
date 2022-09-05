@@ -17,6 +17,12 @@
     <div class="sub--categories">
       <app-categories></app-categories>
     </div>
+    <app-not-found
+    [visible]="!products || !products.length"
+    notFoundMessage="Product not found"
+    reserLinkText="View All"
+    resetLinkRoute = '/home'
+></app-not-found>
     <div class="items">
       <ul>
         <li *ngFor="let prod of products">

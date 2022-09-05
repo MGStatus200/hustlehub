@@ -16,7 +16,15 @@
 <div class="contents--container">
   <div class="sub--categories">
 <app-eventcategories></app-eventcategories>
+
 </div>
+<app-not-found
+[visible]="!events || !events.length"
+notFoundMessage="Event not found"
+reserLinkText="View All"
+resetLinkRoute = '/events'
+></app-not-found>
+
   <div class="items">
     <ul>
       <li *ngFor="let e of events">
