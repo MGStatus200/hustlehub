@@ -11,6 +11,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
 // import { NgToastModule } from 'ng-angular-popup';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { CommonModule } from '@angular/common';
+import {  HttpClientJsonpModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
@@ -85,6 +88,8 @@ import { NotFoundComponent } from './components/partials/not-found/not-found.com
     FormsModule,
     HttpClientModule,
     // NgToastModule
+    GoogleMapsModule,
+    HttpClientJsonpModule,
 
   ],
   providers: [],

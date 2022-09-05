@@ -1,25 +1,90 @@
+<app-userbadge></app-userbadge>
 <div class="container">
+
   <div class="heading">
     <h4>Product To Sell</h4>
   </div>
+
   <div class="fields">
+
     <div class="name--section">
-      <p>I am selling:</p>
-      <input type="text">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>I am selling</mat-label>
+        <input matInput placeholder="Ex. Pizza" >
+      </mat-form-field>
     </div>
+
     <div class="price--section">
       <p>The price is between:</p>
+
       <div class="inputs">
+
           <div class="input--left">
-              <input type="number">
-              <mat-hint>The cheapest</mat-hint>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Cheapest</mat-label>
+              <span matPrefix>R &nbsp;</span>
+              <input matInput placeholder="Ex. 25" >
+            </mat-form-field>
           </div>
+
           <div class="input--right">
-            <input type="number">
-            <mat-hint>Most expensive</mat-hint>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Most Expensive</mat-label>
+              <span matPrefix>R &nbsp;</span>
+              <input matInput placeholder="Ex. 235" >
+            </mat-form-field>
+          </div>
+
+      </div>
+
+      <div class="details">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Give more details about your product</mat-label>
+          <mat-hint>{{message.value.length}} / 256</mat-hint>
+          <textarea #message matInput placeholder="Ex. We have paparoni, chicken and bbq"></textarea>
+        </mat-form-field>
+
+      </div>
+
+      <div class="location">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter address</mat-label>
+          <input
+             class="my-search-box"
+            (keydown.enter)="$event.preventDefault()"
+            placeholder="Search Location"
+            type="text"
+            #search
+           matInput placeholder="Placeholder">
+          <mat-icon matPrefix>my_location</mat-icon>
+        </mat-form-field>
+      </div>
+      <div>
+        <label>Enter address</label>
+      </div>
+      <div *ngIf="apiLoaded | async">
+        <google-map
+        #myGoogleMap
+        height="500px"
+        width="100%"
+        [zoom]="zoom"
+        [center]="center"
+        [options]="options">
+</google-map>
+      </div>
+
+      <div class="images">
+        <div>
+          <p>Upload your Profile Picture</p>
+          <input type="file">
+        </div>
+        <div>
+          <p>Upload your Profile Picture</p>
+          <input type="file">
         </div>
       </div>
     </div>
+    <button color="primary" mat-button >Submit</button>
 
   </div>
 </div>
