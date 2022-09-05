@@ -127,3 +127,9 @@ p{
   font-size: 16px;
 }
 
+.mat-chip{
+  background-color:green ;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+}
