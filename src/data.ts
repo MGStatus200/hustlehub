@@ -16,7 +16,7 @@ export const sample_products:Products[]=[
     vendorid:1
   },
   {
-    id:"1",
+    id:"2",
     name:"Coke",
     minPrice:5,
     maxPrice:25,
@@ -26,7 +26,7 @@ export const sample_products:Products[]=[
     vendorid:1
   },
   {
-    id:"1",
+    id:"3",
     name:"patio chairs",
     minPrice:150,
     maxPrice:300,
@@ -36,7 +36,7 @@ export const sample_products:Products[]=[
     vendorid:2
   },
   {
-    id:"1",
+    id:"4",
     name:"kota",
     minPrice:15,
     maxPrice:45,
