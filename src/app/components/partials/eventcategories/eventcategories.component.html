@@ -1,0 +1,13 @@
+<button class="filter" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>filter_list</mat-icon>
+</button>
+<mat-menu class="menu"#menu="matMenu">
+<div *ngIf="categories">
+  <ul class="list">
+    <li *ngFor="let c of categories" class="icons">
+      <mat-icon>done_outline</mat-icon>
+      <a  routerLink="/ecategory/{{c.name}}">{{c.name}}({{c.count}})</a>
+    </li>
+  </ul>
+</div>
+</mat-menu>

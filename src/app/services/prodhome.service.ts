@@ -29,4 +29,11 @@ export class ProdhomeService {
       return product.categories?.includes(category)
     });
   }
+
+  getProductById(prodId: string):Products{
+    return this.getAllProducts().find(product =>{
+      return product.id === prodId  //when this part is undefiend return
+    }) ?? new Products();  //return new Food
+
+  }
 }

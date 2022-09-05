@@ -1,0 +1,42 @@
+<!-- <app-header></app-header> -->
+<app-hire-service-search></app-hire-service-search>
+
+<div class="prod--container">
+  <div class="location">
+    <p>Showing results within 5km around you</p>
+    <a href="">change distance or location</a>
+  </div>
+
+<div class="main--category">
+  <a href="/home"><button>Buy and support</button></a>
+  <a routerLink="/hire"><button>Hire for a task</button></a>
+  <a routerLink="/events"><button>Attend Events</button></a>
+</div>
+
+<div class="contents--container">
+  <div class="sub--categories">
+    <app-hirecategories></app-hirecategories>
+  </div>
+  <div class="items">
+    <ul>
+      <li *ngFor="let s of service">
+        <a routerLink="/sService/{{s.id}}">
+        <img src={{s.imageUrl}} alt="">
+        <div  class="details">
+
+          <div class="name">
+             <h4>{{s.name}}</h4>
+          </div>
+
+        <div class="prices">
+          <h5>R {{s.cost}} per hour</h5>
+        </div>
+
+        </div>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+</div>

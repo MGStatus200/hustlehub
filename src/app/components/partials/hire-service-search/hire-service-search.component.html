@@ -1,0 +1,8 @@
+<!-- <app-userbadge></app-userbadge> -->
+<div class="search--container">
+  <mat-form-field appearance="fill">
+    <input #s type="search" matInput placeholder="Search  for a Service" (keyup.enter)="search(s.value)" [value]="hsearchTerm" >
+  </mat-form-field>
+  <mat-icon (click)="search(s.value)">search</mat-icon>
+
+</div>

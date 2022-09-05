@@ -1,0 +1,118 @@
+.location{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px 25px 15px 0;
+
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+  a:hover{
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+  a:hover{
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  .main--category{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  }
+  .main--category button{
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    transform: 3s ease;
+    background-color:  rgba(44, 112, 174, 0.98);
+    color: white;
+  }
+  .main--category a:nth-child(1) button,
+  a:nth-child(3) button{
+    background-color: rgb(166, 166, 166);
+    color: grey;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+  }
+
+  .main--category a:nth-child(1) button:hover,
+  a:nth-child(3) button:hover {
+    transition-duration: 0.1s;
+    color: white;
+    background-color: rgba(44, 112, 174, 0.98);
+  }
+  .contents--container{
+    /* display: flex;
+    flex-direction: column; */
+  }
+  .sub--categories{
+    display: flex;
+    background-color: white;
+    margin-bottom: 50px;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  li{
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 5px;
+    background-color: white;
+
+   box-shadow: 0px 0px 0px grey;
+   transition:  box-shadow .6s ease-out;
+      box-shadow: .8px .9px 3px grey;
+
+  }
+  .li:hover{
+       box-shadow: 1px 8px 20px grey;
+     transition:  box-shadow .6s ease-in;
+    }
+
+  .items{
+    /* display: flex;
+    flex-direction: column; */
+  }
+  img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+  }
+  .prices{
+    gap:20px;
+    display: flex;
+    justify-content: space-between;
+  }
+.name{
+  min-height: 60px;
+}

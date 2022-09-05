@@ -1,0 +1,7 @@
+<!-- <app-userbadge></app-userbadge> -->
+<div class="search--container">
+  <mat-form-field appearance="fill">
+    <input #s type="search" matInput placeholder="Search  for an Event" (keyup.enter)="search(s.value)" [value]="esearchTerm">
+  </mat-form-field>
+  <mat-icon (click)="search(s.value)">search</mat-icon>
+</div>

@@ -24,6 +24,18 @@ import { SellproductComponent } from './components/pages/sellproduct/sellproduct
 import { SearchComponent } from './components/partials/search/search.component';
 import { CategoriesComponent } from './components/partials/categories/categories.component';
 import { ProdSearchComponent } from './components/partials/prod-search/prod-search.component';
+import { HireServiceComponent } from './components/pages/hire-service/hire-service.component';
+import { HireServiceSearchComponent } from './components/partials/hire-service-search/hire-service-search.component';
+import { HirecategoriesComponent } from './components/partials/hirecategories/hirecategories.component';
+import { EventsInviteComponent } from './components/pages/events-invite/events-invite.component';
+import { EventSearchComponent } from './components/partials/event-search/event-search.component';
+import { EventcategoriesComponent } from './components/partials/eventcategories/eventcategories.component';
+import { FooterComponent } from './components/partials/footer/footer.component';
+import { SingleProdComponent } from './components/partials/single-prod/single-prod.component';
+import { SingleEventComponent } from './components/partials/single-event/single-event.component';
+import { SingleServiceComponent } from './components/partials/single-service/single-service.component';
+import { SubscriptionComponent } from './components/pages/subscription/subscription.component';
+import { PaymentComponent } from './components/pages/payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +51,18 @@ import { ProdSearchComponent } from './components/partials/prod-search/prod-sear
     SearchComponent,
     CategoriesComponent,
     ProdSearchComponent,
+    HireServiceComponent,
+    HireServiceSearchComponent,
+    HirecategoriesComponent,
+    EventsInviteComponent,
+    EventSearchComponent,
+    EventcategoriesComponent,
+    FooterComponent,
+    SingleProdComponent,
+    SingleEventComponent,
+    SingleServiceComponent,
+    SubscriptionComponent,
+    PaymentComponent,
     // NgToastModule
   ],
   imports: [

@@ -10,12 +10,12 @@
   height: 50px;
   background: rgba(44, 112, 174, 0.98);
   font-size: 16px;
-  color: white ;
+  color: white;
   font-weight: 600;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right:-25px;
+  justify-content: space-around;
+  margin-right: 0px;
 }
 /* .mat-menu{
 

@@ -1,0 +1,42 @@
+<!-- <app-header></app-header> -->
+<app-event-search></app-event-search>
+
+<div class="prod--container">
+  <div class="location">
+    <p>Showing results within 5km around you</p>
+    <a href="">change distance or location</a>
+  </div>
+
+<div class="main--category">
+  <a href="/home"><button>Buy and support</button></a>
+  <a routerLink="/hire"><button>Hire for a task</button></a>
+  <a routerLink="/events"><button>Attend Events</button></a>
+</div>
+
+<div class="contents--container">
+  <div class="sub--categories">
+<app-eventcategories></app-eventcategories>
+</div>
+  <div class="items">
+    <ul>
+      <li *ngFor="let e of events">
+        <a routerLink="/sEvent/{{e.id}}">
+        <img src={{e.posterImgUrl}} alt="">
+        <div  class="details">
+
+          <div class="name">
+             <h4>{{e.name}}</h4>
+          </div>
+
+        <div class="prices">
+          <h5>Kids:R {{e.kidsPrice}}</h5>
+          <h5>Adults:R {{e.adultsPrice}}</h5>
+        </div>
+
+        </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>

@@ -1,25 +1,44 @@
+<!-- <app-header></app-header> -->
 <app-prod-search></app-prod-search>
-<p>Showing results within 5km around you</p>
-<a href="">change distance or location</a>
-<div class="main--category">
-  <a href=""><button>Buy and support</button></a>
-  <a href=""><button>Hire for a task</button></a>
-  <a href=""><button>Attend Events</button></a>
-</div>
-<div class="contents--container">
-  <div class="sub--categories">
-    <app-categories></app-categories>
-  </div>
-  <div class="items">
-    <ul>
-      <li *ngFor="let prod of products">
-        <h4>{{prod.name}}</h4>
-        <div class="prices">
-          <h5>{{prod.minPrice}}</h5>
-          <h5>{{prod.maxPrice}}</h5>
-        </div>
-      </li>
-    </ul>
 
+<div class="prod--container">
+  <div class="location">
+    <p>Showing results within 5km around you</p>
+    <a href="">change distance or location</a>
   </div>
+
+  <div class="main--category">
+    <a href="/home"><button>Buy and support</button></a>
+    <a routerLink="/hire"><button>Hire for a task</button></a>
+    <a routerLink="/events"><button>Attend Events</button></a>
+  </div>
+
+  <div class="contents--container">
+    <div class="sub--categories">
+      <app-categories></app-categories>
+    </div>
+    <div class="items">
+      <ul>
+        <li *ngFor="let prod of products">
+          <a routerLink="/sProduct/{{prod.id}}">
+          <img src={{prod.imageUrl}} alt="">
+          <div  class="details">
+
+            <div class="name">
+              <h4>{{prod.name}}</h4>
+            </div>
+
+            <div class="prices">
+              <h5>From: R {{prod.minPrice}}</h5>
+              <h5>To: R {{prod.maxPrice}}</h5>
+            </div>
+
+          </div>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
 </div>

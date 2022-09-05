@@ -1,4 +1,7 @@
-<div>
-  <input #s type="text" placeholder="Search for any Product" (keyup.enter)="search(s.value)" [value]="searchTerm"/>
-  <button (click)="search(s.value)">Search</button>
+<!-- <app-userbadge></app-userbadge> -->
+<div class="search--container">
+  <mat-form-field appearance="fill">
+    <input #s type="search" matInput placeholder="Search for any Product" (keyup.enter)="search(s.value)" [value]="searchTerm" >
+  </mat-form-field>
+  <mat-icon (click)="search(s.value)">search</mat-icon>
 </div>
