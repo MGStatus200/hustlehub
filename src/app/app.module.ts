@@ -17,6 +17,8 @@ import {  HttpClientJsonpModule } from '@angular/common/http';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
+import {MatChipsModule} from '@angular/material/chips';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
@@ -45,6 +47,7 @@ import { PaymentComponent } from './components/pages/payment/payment.component';
 import { AddEventComponent } from './components/pages/add-event/add-event.component';
 import { AddServiceComponent } from './components/pages/add-service/add-service.component';
 import { NotFoundComponent } from './components/partials/not-found/not-found.component';
+import { ManageshopComponent } from './components/pages/manageshop/manageshop.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +78,7 @@ import { NotFoundComponent } from './components/partials/not-found/not-found.com
     AddEventComponent,
     AddServiceComponent,
     NotFoundComponent,
+    ManageshopComponent,
     // NgToastModule
   ],
   imports: [
@@ -95,7 +99,8 @@ import { NotFoundComponent } from './components/partials/not-found/not-found.com
     HttpClientJsonpModule,
     MatCheckboxModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatChipsModule
 
   ],
   providers: [],

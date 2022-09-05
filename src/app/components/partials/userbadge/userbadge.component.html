@@ -1,23 +1,14 @@
-<app-header></app-header>
 <div class="user--welcome-menu">
   <button mat-button [matMenuTriggerFor]="menu">Welcome Given Makofane<mat-icon>more_vert</mat-icon>
+    <mat-chip>
+      <img matChipAvatar src="../../../../assets/free.gif" alt=""/>
+      Basic Plan
+    </mat-chip>
   </button>
   <mat-menu #menu="matMenu" yPosition="below" xPosition="after">
-      <button mat-menu-item>View Profile</button>
-      <button mat-menu-item>Manage Shop</button>
-      <button mat-menu-item>Manage Shop</button>
-      <button mat-menu-item
-      matTooltip="Standard Plan"
-      aria-label="">Update Subscription</button>      <button mat-menu-item>Logout</button>
+    <a routerLink="/manageItems"><button mat-menu-item>Manage Hustles</button></a>
+    <a routerLink="/plan"><button mat-menu-item>Update Subscription</button></a>
+    <a routerLink="/home"><button mat-menu-item>Logout</button></a>
+      <a routerLink="/home"><button mat-menu-item>Home</button></a>
     </mat-menu>
 </div>
-
-
-<!-- <mat-drawer-container class="example-container" >
-  <mat-drawer #drawer >I'm a drawer</mat-drawer>
-  <mat-drawer-content>
-    <button mat-menu-item>View Profile</button>
-    <button mat-menu-item>Manage Shop</button>
-    <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
-  </mat-drawer-content>
-</mat-drawer-container> -->

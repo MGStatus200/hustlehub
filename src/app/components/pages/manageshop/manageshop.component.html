@@ -1,0 +1,73 @@
+<app-userbadge></app-userbadge>
+<div class="container">
+  <div class="items">
+    <h1>Your Products</h1>
+    <ul>
+      <li *ngFor="let prod of products">
+        <a routerLink="/sProduct/{{prod.id}}">
+        <img src={{prod.imageUrl}} alt="">
+        <div  class="details">
+
+          <div class="name">
+            <h4>{{prod.name}}</h4>
+          </div>
+
+          <div class="prices">
+            <h5>From: R {{prod.minPrice}}</h5>
+            <h5>To: R {{prod.maxPrice}}</h5>
+          </div>
+          <mat-icon>launch</mat-icon>
+        </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="items">
+    <h1>Your Services</h1>
+    <ul>
+      <li *ngFor="let s of service">
+        <a routerLink="/sService/{{s.id}}">
+        <img src={{s.imageUrl}} alt="">
+        <div  class="details">
+
+          <div class="name">
+             <h4>{{s.name}}</h4>
+          </div>
+
+        <div class="prices">
+          <h5>R {{s.cost}} per hour</h5>
+        </div>
+        <mat-icon>launch</mat-icon>
+
+
+        </div>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="items">
+    <h1>Your Events</h1>
+
+    <ul>
+      <li *ngFor="let e of events">
+        <a routerLink="/sEvent/{{e.id}}">
+        <img src={{e.posterImgUrl}} alt="">
+        <div  class="details">
+
+          <div class="name">
+             <h4>{{e.name}}</h4>
+          </div>
+
+        <div class="prices">
+          <h5>Kids:R {{e.kidsPrice}}</h5>
+          <h5>Adults:R {{e.adultsPrice}}</h5>
+        </div>
+        <mat-icon>launch</mat-icon>
+
+        </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

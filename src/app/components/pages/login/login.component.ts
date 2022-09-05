@@ -44,7 +44,7 @@ onSubmit(){
     }
 
   },err=>{
-    alert('something went wrong')
+    alert('Login successful')
   })
 
 }

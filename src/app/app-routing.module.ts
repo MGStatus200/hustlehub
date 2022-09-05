@@ -7,6 +7,7 @@ import { EventsInviteComponent } from './components/pages/events-invite/events-i
 import { HireServiceComponent } from './components/pages/hire-service/hire-service.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { LoginComponent } from './components/pages/login/login.component';
+import { ManageshopComponent } from './components/pages/manageshop/manageshop.component';
 import { PaymentComponent } from './components/pages/payment/payment.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { SellproductComponent } from './components/pages/sellproduct/sellproduct.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path:'addProduct',component:SellproductComponent},
   {path:'payment',component:PaymentComponent},
   {path:'plan',component:SubscriptionComponent},
+  {path:'manageItems',component:ManageshopComponent},
 
   {path:'home',component:HomeComponent},
   {path:'search/:searchTerm',component:HomeComponent},

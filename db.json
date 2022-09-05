@@ -1,9 +1,9 @@
 {
   "users": [
     {
-      "email": "paerson@exaple.com",
-      "password": "Person@123",
-      "confirm_password": "Person@123",
+      "email": "user@gmail.com",
+      "password": "Password@123!",
+      "confirm_password": "Password@123!",
       "id": 1
     }
   ],
